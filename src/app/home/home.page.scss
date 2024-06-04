@@ -1,0 +1,43 @@
+.container {
+  margin-top: 250px;
+}
+ion-input {
+  --highlight-color-focused: #ffcb00;
+  --placeholder-color: #ffcb00;
+  width: 230px;
+  min-width: 100px;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+ion-button {
+  --border-color: #ffcb00;
+  --color: #ffcb00;
+  margin-left: 170px;
+}
+ion-button:hover {
+  background-color: #ffcb00;
+  color: #000000;
+  transition: 200ms all ease-in-out;
+  border-radius: 5px;
+}
+#sessao {
+  display: flex;
+  padding: 40px 0 0 0;
+  height: 370px;
+  width: 450px;
+  overflow: auto;
+}
+#label1 {
+  font-size: 40px;
+  margin: 0 0 0 170px;
+  min-font-size: 20px;
+  color: #ffcb00;
+}
+#olhodesenha {
+  color: #ffcb00;
+  cursor: pointer;
+  margin: 43px 0 0 350px;
+  position: absolute;
+  font-size: 24px;
+}
+

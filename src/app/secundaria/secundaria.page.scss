@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+body {
+  overflow-y: scroll
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffcb00;
+  border-radius: 10px;
+}
+ion-input {
+  --color: #ffcb00;
+  --border-color: #ffcb00;
+  --highlight-color-focused: #ffcb00;
+}
+.campo {
+  width: 200px;
+}
+#botao {
+  border-color: #ffcb00;
+  color: #ffcb00;
+}
+ion-item-group {
+  background: #1f1f1f;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 100px;
+}
+ion-select::part(text) {
+  color: #ffcb00;
+}
+ion-select {
+  --highlight-color-focused: #ffcb00;
+  color: #ffcb00;
+}
+ion-select::part(icon) {
+  transform: none;
+}
+

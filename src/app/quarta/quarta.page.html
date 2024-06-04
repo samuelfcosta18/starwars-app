@@ -1,0 +1,104 @@
+<body>
+<app-menu></app-menu>
+<br>
+<br>
+<br>
+<br>
+<ion-toolbar>
+  <ion-title>Filmes (Trilogia original)</ion-title>
+</ion-toolbar>
+
+<ion-card *ngIf="ANH" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{ANH.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{ANH.title}}</ion-card-subtitle>
+
+    <ion-card-content>
+      Data de lançamento: {{ANH.release_date}}
+      <br>
+      Diretor: {{ANH.director}}
+      <br>
+      Produtor(es): {{ANH.producer}}
+    </ion-card-content>
+  </ion-card-header>
+</ion-card>
+
+<ion-card *ngIf="TESB" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{TESB.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{TESB.title}}</ion-card-subtitle>
+
+    <ion-card-content>
+      Data de lançamento: {{TESB.release_date}}
+      <br>
+      Diretor: {{TESB.director}}
+      <br>
+      Produtor(es): {{TESB.producer}}
+    </ion-card-content>
+  </ion-card-header>
+</ion-card>
+
+<ion-card *ngIf="ROTJ" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{ROTJ.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{ROTJ.title}}</ion-card-subtitle>
+
+    <ion-card-content>
+      Data de lançamento: {{ROTJ.release_date}}
+      <br>
+      Diretor: {{ROTJ.director}}
+      <br>
+      Produtor(es): {{ROTJ.producer}}
+    </ion-card-content>
+  </ion-card-header>
+</ion-card>
+
+<ion-toolbar>
+  <ion-title>Filmes (Trilogia prequel)</ion-title>
+</ion-toolbar>
+
+<ion-card *ngIf="TPM" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{TPM.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{TPM.title}}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Data de lançamento: {{TPM.release_date}}
+    <br>
+    Diretor: {{TPM.director}}
+    <br>
+    Produtor(es): {{TPM.producer}}
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="AOTC" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{AOTC.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{AOTC.title}}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Data de lançamento: {{AOTC.release_date}}
+    <br>
+    Diretor: {{AOTC.director}}
+    <br>
+    Produtor(es): {{AOTC.producer}}
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="ROTS" class="card">
+  <ion-card-header>
+    <ion-card-title>Nome: {{ROTS.title}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre {{ROTS.title}}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Data de lançamento: {{ROTS.release_date}}
+    <br>
+    Diretor: {{ROTS.director}}
+    <br>
+    Produtor(es): {{ROTS.producer}}
+  </ion-card-content>
+</ion-card>
+</body>

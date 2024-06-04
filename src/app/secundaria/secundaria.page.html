@@ -1,0 +1,46 @@
+<body>
+<app-menu></app-menu>
+<br>
+<br>
+<br>
+  <ion-item-group>
+  <ion-item class="campo" id="seletor">
+    <ion-select label="Escolha um tipo de dado:" label-placement="stacked" [(ngModel)]="valorSelecionado" toggle-icon="menu" mode="ios">
+      <ion-select-option value="planets">Planetas</ion-select-option>
+      <ion-select-option value="people">Pessoas</ion-select-option>
+      <ion-select-option value="films">Filmes</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <br>
+  <ion-input type="number" label="Número" label-placement="floating" placeholder="Insira um número de 1 a 30" fill="outline" class="campo" id="dados-api2"></ion-input>
+  <br>
+  <ion-button fill="outline" (click)="pedidoApi()"  color="warning">Enviar um pedido</ion-button>
+  </ion-item-group>
+
+<ion-card *ngIf="retornoapi">
+  <ion-card-header>
+    <ion-card-title>Nome: {{retornoapi.title}} {{retornoapi.name}}</ion-card-title>
+    <ion-card-subtitle>Informações sobre: {{retornoapi.title}} {{retornoapi.name}}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Data de lançamento: {{retornoapi.release_date}}
+    <br>
+    Diretor: {{retornoapi.director}}
+    <br>
+    Produtor(es): {{retornoapi.producer}}
+    <br>
+    Altura: {{retornoapi.height}} centímetros
+    <br>
+    Massa: {{retornoapi.mass}} quilos
+    <br>
+    Período rotacional: {{retornoapi.rotation_period}} horas
+    <br>
+    Diâmetro: {{retornoapi.diameter}}
+  </ion-card-content>
+</ion-card>
+</body>
+
+
+
+
